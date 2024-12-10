@@ -20,19 +20,17 @@ console.log("Массив с самым большим числом:", biggest);
 console.log("Массив с самым маленьким числом:", smallest); 
 
 // 2 Задание найти самое длинное имя 
-let students = ["Max", "Shaha", "Abubakr", "Azam", "Behruz", "Aziz", "Safina", "Samir", "Ruxshona", "Azim", "Miraziz", "Nuriddin, Sardor,"]
+let names = ["Max", "Shaha", "Abubakr", "Azam", "Behruz", "Aziz", "Safina", "Samir", "Ruxshona", "Azim", "Miraziz", "Nuriddin", "Sardor"];
 
-let longestname = []
-
+let longestname = [];
 let maxLength = 0;
 
-// 
-students.forEach(name => {
+names.forEach(name => {
   if (name.length > maxLength) {
-    maxLength = name.length; 
-    longestname = [name];    
+    maxLength = name.length;
+    longestname = [name]; 
   } else if (name.length === maxLength) {
-    longestname.push(name);  
+    longestname.push(name); 
   }
 });
 
